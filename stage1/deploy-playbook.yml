@@ -8,5 +8,5 @@
     app_folder: /opt/yolo
 
   roles:
-    - docker-installation
-    - docker-containers
+    - docker-install
+    - docker-run
