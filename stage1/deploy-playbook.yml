@@ -1,0 +1,10 @@
+---
+- name: Configure Docker and run containers
+  hosts: all  # Update with appropriate target hosts
+  gather_facts: false
+  vars:
+    app_folder: /opt/yolo
+
+  roles:
+    - docker-install
+    - docker-run
