@@ -3,8 +3,10 @@
   hosts: all  # Update with appropriate target hosts
   gather_facts: false
   vars:
+    client_image: mnyagura/client:v1.0.0
+    backend_image: mnyagura/backend:v1.0.0
     app_folder: /opt/yolo
 
   roles:
-    - docker-install
-    - docker-run
+    - docker-installation
+    - docker-containers
