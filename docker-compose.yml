@@ -3,7 +3,7 @@ version: '3'
 services:
   client:
     container_name: client
-    image: mnyagura/client:v1.0.0
+    image: {{ client_image }}
     ports:
       - 3000:3000
     networks:
@@ -14,7 +14,7 @@ services:
 
   backend:
     container_name: backend
-    image: mnyagura/backend:v1.0.0
+    image: {{ backend_image }}
     ports:
       - 5000:5000
     environment:
